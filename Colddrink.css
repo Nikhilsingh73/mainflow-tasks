@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poopins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family:'poopins',sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:#fff;
+
+}
+.container .header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .header .logo{
+    position: relative;
+    right: 50px;
+}
+.container .header .logo span{
+    display: none;
+}
+.container .header .logo img{
+    position: relative;
+    width: 80px;
+}
+.container .header .menu ul{
+    position: relative;
+    display: flex;
+    top: -10px;
+}
+.container .menu li {
+    padding: 35px;
+    font-size: 1.2em;
+    color: #000;
+    
+}
+ .menu a::before{
+    content: "";    
+    background-color: #fd825b;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    height: 1.8px;
+    width:0;
+    transition: 0.3s ease-in-out;
+}
+  a:hover::before{
+    width: 100%;
+}
+.container .menu a{
+    text-decoration: none;
+    list-style: none;
+}
+/* <-----home-----------> */
+.Homepage{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Homepage .content{
+    position: relative;
+    width: 50%;
+}
+.Homepage .content h1{
+    position: relative;
+    font-weight: bold;
+    font-size:5em;
+    color: black;
+}
+.Homepage .content span{
+    font-size: 1.2em;
+    color: rgb(17, 3, 95);
+}
+.Homepage .content p{
+    color: #000;
+}
+.Homepage .content button{
+    position: relative;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: rgb(0, 12, 54);
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.Homepage .content button:hover{
+    background-color: rgb(23, 21, 40);
+}
+.Homepage .img{
+    position: relative;
+    justify-content: center;
+    display: grid;
+}
+.Homepage .img img{
+    position: relative;
+    width: 460px;
+   transform: rotate(-10deg);
+}
+ .container .color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fd825b;
+    top: 0;
+    left: 0;
+    clip-path: circle(700px at right 800px);
+    transition: 0.2s ease-out;
+}
+.container .Canimg{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    }
+.container .Canimg img{
+    width: 70px;
+    height: 65px;
+    transform: rotate(-15deg);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.container .Canimg img:hover{
+    margin-top: -10px;
+}
+.container .Canimg #can2{
+    width: 60px;
+    height: 60px; 
+} 
+ .Canimg .can{
+    width: 60px ;
+    height: 55px;
+}
+
+
+/* <-------icons--------------> */
+
+ .container .icons{
+    position: absolute;
+    display:grid ;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    gap: 25px;
+    top:35vh;
+    right: 40px;
+}
+.container .icons i{
+    font-size: 1.4em;
+    color: #fcfcfc;
+} 
+
+
+
+
+
+
